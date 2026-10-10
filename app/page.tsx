@@ -82,6 +82,7 @@ export default function Home() {
             <a href="#beranda" className="hover:text-amber-600 transition-colors">BERANDA</a>
             <a href="#menu" className="hover:text-amber-600 transition-colors">MENU</a>
             <a href="#fasilitas" className="hover:text-amber-600 transition-colors">FASILITAS</a>
+            <a href="#lokasi" className="hover:text-amber-600 transition-colors">LOKASI</a>
           </div>
         </div>
       </nav>
@@ -150,12 +151,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-stone-900 text-stone-400 py-12 text-center">
+      {/* FOOTER / LOKASI SECTION */}
+      <footer id="lokasi" className="bg-stone-900 text-stone-400 py-16 text-center">
         <div className="font-bold text-2xl text-white mb-4 tracking-tighter">ETERNAL.</div>
-        <p className="mb-2">Ruko Maxwell, Gading Serpong</p>
-        <p className="mb-8">Buka 24 Jam</p>
-        <p className="text-sm">&copy; 2026 Eternal Caffe & Gelato. All rights reserved.</p>
+        <p className="mb-2 text-stone-300 font-medium text-lg">Ruko Maxwell, Gading Serpong</p>
+        <p className="mb-8 text-stone-400">Buka 24 Jam</p>
+        <p className="text-sm text-stone-500">&copy; 2026 Eternal Caffe & Gelato. All rights reserved.</p>
       </footer>
     </main>
   );
