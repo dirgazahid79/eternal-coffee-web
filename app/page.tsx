@@ -91,7 +91,7 @@ export default function Home() {
         id="beranda" 
         className="relative pt-44 pb-32 px-6 text-center text-white bg-cover bg-center"
         style={{ 
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1920&auto=format&fit=crop')` 
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('/beranda.png')` 
         }}
       >
         <div className="max-w-3xl mx-auto relative z-10">
