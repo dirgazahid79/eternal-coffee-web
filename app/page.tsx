@@ -155,7 +155,20 @@ export default function Home() {
       <footer id="lokasi" className="bg-stone-900 text-stone-400 py-16 text-center">
         <div className="font-bold text-2xl text-white mb-4 tracking-tighter">ETERNAL.</div>
         <p className="mb-2 text-stone-300 font-medium text-lg">Ruko Maxwell, Gading Serpong</p>
-        <p className="mb-8 text-stone-400">Buka 24 Jam</p>
+        <p className="mb-6 text-stone-400">Buka 24 Jam</p>
+        
+        {/* Tombol Google Maps */}
+        <div className="mb-8">
+          <a 
+            href="https://maps.google.com/?q=Ruko+Maxwell+Gading+Serpong" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-amber-600 hover:bg-amber-500 text-white font-medium px-6 py-3 rounded-xl transition-colors shadow-sm"
+          >
+            📍 Buka di Google Maps
+          </a>
+        </div>
+
         <p className="text-sm text-stone-500">&copy; 2026 Eternal Caffe & Gelato. All rights reserved.</p>
       </footer>
     </main>
