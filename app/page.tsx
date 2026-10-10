@@ -86,7 +86,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO / BERANDA SECTION */}
+      {/* HERO / BERANDA SECTION (Tanpa Tombol Lokasi) */}
       <section 
         id="beranda" 
         className="relative pt-44 pb-32 px-6 text-center text-white bg-cover bg-center"
@@ -101,21 +101,9 @@ export default function Home() {
           <p className="text-xl md:text-2xl font-light text-stone-200">
             Lebih Dari <span className="text-amber-400 font-semibold">Sekadar Kopi.</span>
           </p>
-          <p className="mt-4 text-stone-300 max-w-lg mx-auto mb-10 leading-relaxed">
+          <p className="mt-4 text-stone-300 max-w-lg mx-auto leading-relaxed">
             Ruang nyaman untuk setiap inspirasimu. Nikmati perpaduan sempurna antara kopi pilihan dan ruang produktif untuk menemani hari-harimu.
           </p>
-
-          {/* Tombol Google Maps Utama (Gading Serpong) */}
-          <div>
-            <a 
-              href="https://maps.google.com/?q=Ruko+Maxwell+Gading+Serpong" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block bg-[#8D5B4C] hover:bg-[#73473C] text-white font-medium px-8 py-3.5 rounded-xl transition-all shadow-lg hover:scale-105 border border-[#A47164]"
-            >
-              📍 Lokasi Gading Serpong
-            </a>
-          </div>
         </div>
       </section>
 
@@ -178,7 +166,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER (Dengan Alamat Gading Serpong & BSD) */}
+      {/* FOOTER */}
       <footer className="bg-stone-900 text-stone-400 py-14 text-center">
         <div className="font-bold text-2xl text-white mb-6 tracking-tighter">ETERNAL</div>
         
