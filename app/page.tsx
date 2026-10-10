@@ -72,7 +72,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-stone-50 text-stone-800 font-sans">
       
-      {/* NAVBAR SECTION */}
+      {/* NAVBAR SECTION (Tanpa Lokasi) */}
       <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-stone-200 top-0 left-0">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-2xl font-black tracking-tighter text-stone-900 cursor-pointer">
@@ -82,12 +82,11 @@ export default function Home() {
             <a href="#beranda" className="hover:text-amber-600 transition-colors">BERANDA</a>
             <a href="#menu" className="hover:text-amber-600 transition-colors">MENU</a>
             <a href="#fasilitas" className="hover:text-amber-600 transition-colors">FASILITAS</a>
-            <a href="#lokasi" className="hover:text-amber-600 transition-colors">LOKASI</a>
           </div>
         </div>
       </nav>
 
-      {/* HERO SECTION */}
+      {/* HERO / BERANDA SECTION (Dengan Tombol Maps) */}
       <section id="beranda" className="bg-stone-900 text-stone-50 pt-36 pb-24 px-6 text-center">
         <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-6">
           ETERNAL.
@@ -95,9 +94,21 @@ export default function Home() {
         <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto text-stone-300">
           Lebih Dari <span className="text-amber-500 font-semibold">Sekadar Kopi.</span>
         </p>
-        <p className="mt-4 text-stone-400 max-w-lg mx-auto">
+        <p className="mt-4 text-stone-400 max-w-lg mx-auto mb-8">
           Ruang nyaman untuk setiap inspirasimu. Nikmati perpaduan sempurna antara kopi pilihan dan ruang produktif untuk menemani hari-harimu.
         </p>
+
+        {/* Tombol Google Maps di Beranda */}
+        <div>
+          <a 
+            href="https://maps.google.com/?q=Ruko+Maxwell+Gading+Serpong" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-amber-600 hover:bg-amber-500 text-white font-medium px-6 py-3 rounded-xl transition-colors shadow-lg"
+          >
+            📍 Buka Lokasi di Google Maps
+          </a>
+        </div>
       </section>
 
       {/* MENU SECTION */}
@@ -151,25 +162,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER / LOKASI SECTION */}
-      <footer id="lokasi" className="bg-stone-900 text-stone-400 py-16 text-center">
+      {/* FOOTER */}
+      <footer className="bg-stone-900 text-stone-400 py-12 text-center">
         <div className="font-bold text-2xl text-white mb-4 tracking-tighter">ETERNAL.</div>
-        <p className="mb-2 text-stone-300 font-medium text-lg">Ruko Maxwell, Gading Serpong</p>
-        <p className="mb-6 text-stone-400">Buka 24 Jam</p>
-        
-        {/* Tombol Google Maps */}
-        <div className="mb-8">
-          <a 
-            href="https://maps.google.com/?q=Ruko+Maxwell+Gading+Serpong" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-block bg-amber-600 hover:bg-amber-500 text-white font-medium px-6 py-3 rounded-xl transition-colors shadow-sm"
-          >
-            📍 Buka di Google Maps
-          </a>
-        </div>
-
-        <p className="text-sm text-stone-500">&copy; 2026 Eternal Caffe & Gelato. All rights reserved.</p>
+        <p className="mb-2">Ruko Maxwell, Gading Serpong</p>
+        <p className="mb-8">Buka 24 Jam</p>
+        <p className="text-sm">&copy; 2026 Eternal Caffe & Gelato. All rights reserved.</p>
       </footer>
     </main>
   );
