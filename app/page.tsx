@@ -71,8 +71,23 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-stone-50 text-stone-800 font-sans">
+      
+      {/* NAVBAR SECTION */}
+      <nav className="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-stone-200 top-0 left-0">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div className="text-2xl font-black tracking-tighter text-stone-900 cursor-pointer">
+            <a href="#beranda">ETERNAL.</a>
+          </div>
+          <div className="hidden md:flex space-x-8 text-sm font-bold text-stone-600 tracking-wide">
+            <a href="#beranda" className="hover:text-amber-600 transition-colors">BERANDA</a>
+            <a href="#menu" className="hover:text-amber-600 transition-colors">MENU</a>
+            <a href="#fasilitas" className="hover:text-amber-600 transition-colors">FASILITAS</a>
+          </div>
+        </div>
+      </nav>
+
       {/* HERO SECTION */}
-      <section className="bg-stone-900 text-stone-50 py-24 px-6 text-center">
+      <section id="beranda" className="bg-stone-900 text-stone-50 pt-36 pb-24 px-6 text-center">
         <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-6">
           ETERNAL.
         </h1>
@@ -85,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* MENU SECTION */}
-      <section className="py-20 px-6 max-w-7xl mx-auto">
+      <section id="menu" className="py-20 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold tracking-tight text-stone-900">Our Menu</h2>
           <p className="text-stone-500 mt-2">Harga tertera untuk ukuran Hot / Ice / Large (sesuai ketersediaan)</p>
@@ -111,23 +126,23 @@ export default function Home() {
       </section>
 
       {/* FACILITIES SECTION */}
-      <section className="bg-white py-20 px-6 border-y border-stone-100">
+      <section id="fasilitas" className="bg-white py-20 px-6 border-y border-stone-100">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold tracking-tight mb-12">Fasilitas Kami</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="p-6 bg-stone-50 rounded-xl border border-stone-100">
+            <div className="p-6 bg-stone-50 rounded-xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-3xl mb-3">🔌</div>
               <div className="font-medium">Colokan Tersedia</div>
             </div>
-            <div className="p-6 bg-stone-50 rounded-xl border border-stone-100">
+            <div className="p-6 bg-stone-50 rounded-xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-3xl mb-3">📶</div>
               <div className="font-medium">WiFi Super Cepat</div>
             </div>
-            <div className="p-6 bg-stone-50 rounded-xl border border-stone-100">
+            <div className="p-6 bg-stone-50 rounded-xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-3xl mb-3">❄️</div>
               <div className="font-medium">Full AC</div>
             </div>
-            <div className="p-6 bg-stone-50 rounded-xl border border-stone-100">
+            <div className="p-6 bg-stone-50 rounded-xl border border-stone-100 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-3xl mb-3">🛋️</div>
               <div className="font-medium">Tempat Nyaman</div>
             </div>
