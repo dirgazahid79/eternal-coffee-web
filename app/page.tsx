@@ -100,7 +100,7 @@ export default function Home() {
           </div>
           <div className="p-6 bg-stone-50 rounded-xl border border-stone-100">
             <div className="text-3xl mb-3">🛋️</div>
-            <div className="font-medium">Sofa Nyaman</div>
+            <div className="font-medium">Tempat Nyaman</div>
           </div>
         </div>
       </section>
