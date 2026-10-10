@@ -86,7 +86,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO / BERANDA SECTION (Tanpa Titik) */}
+      {/* HERO / BERANDA SECTION */}
       <section 
         id="beranda" 
         className="relative pt-44 pb-32 px-6 text-center text-white bg-cover bg-center"
@@ -105,7 +105,7 @@ export default function Home() {
             Ruang nyaman untuk setiap inspirasimu. Nikmati perpaduan sempurna antara kopi pilihan dan ruang produktif untuk menemani hari-harimu.
           </p>
 
-          {/* Tombol Google Maps */}
+          {/* Tombol Google Maps Utama (Gading Serpong) */}
           <div>
             <a 
               href="https://maps.google.com/?q=Ruko+Maxwell+Gading+Serpong" 
@@ -113,7 +113,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-block bg-[#8D5B4C] hover:bg-[#73473C] text-white font-medium px-8 py-3.5 rounded-xl transition-all shadow-lg hover:scale-105 border border-[#A47164]"
             >
-              📍 Buka Lokasi di Google Maps
+              📍 Lokasi Gading Serpong
             </a>
           </div>
         </div>
@@ -178,11 +178,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="bg-stone-900 text-stone-400 py-12 text-center">
-        <div className="font-bold text-2xl text-white mb-2 tracking-tighter">ETERNAL</div>
-        <p className="mb-2">Ruko Maxwell, Gading Serpong</p>
-        <p className="mb-6">Buka 24 Jam</p>
+      {/* FOOTER (Dengan Alamat Gading Serpong & BSD) */}
+      <footer className="bg-stone-900 text-stone-400 py-14 text-center">
+        <div className="font-bold text-2xl text-white mb-6 tracking-tighter">ETERNAL</div>
+        
+        {/* Lokasi Cabang */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto px-6 mb-10 text-stone-300">
+          <div className="bg-stone-800/60 p-6 rounded-2xl border border-stone-800">
+            <h3 className="font-bold text-white text-lg mb-2 text-amber-500">Cabang Gading Serpong</h3>
+            <p className="text-sm mb-4">Ruko Maxwell, Gading Serpong<br />Buka 24 Jam</p>
+            <a 
+              href="https://maps.google.com/?q=Ruko+Maxwell+Gading+Serpong" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block bg-[#8D5B4C] hover:bg-[#73473C] text-white text-xs font-medium px-4 py-2 rounded-lg transition-colors"
+            >
+              📍 Buka Maps Gading Serpong
+            </a>
+          </div>
+
+          <div className="bg-stone-800/60 p-6 rounded-2xl border border-stone-800">
+            <h3 className="font-bold text-white text-lg mb-2 text-amber-500">Cabang BSD</h3>
+            <p className="text-sm mb-4">Area BSD City<br />Buka 24 Jam</p>
+            <a 
+              href="https://maps.google.com/?q=Eternal+Coffee+BSD" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block bg-[#8D5B4C] hover:bg-[#73473C] text-white text-xs font-medium px-4 py-2 rounded-lg transition-colors"
+            >
+              📍 Buka Maps BSD
+            </a>
+          </div>
+        </div>
         
         {/* Link & Logo Instagram */}
         <div className="mb-6">
