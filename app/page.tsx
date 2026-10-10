@@ -76,7 +76,7 @@ export default function Home() {
       <nav className="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-stone-200 top-0 left-0">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-2xl font-black tracking-tighter text-stone-900 cursor-pointer">
-            <a href="#beranda">ETERNAL<span className="text-amber-600">.</span></a>
+            <a href="#beranda">ETERNAL</a>
           </div>
           <div className="hidden md:flex space-x-8 text-sm font-bold text-stone-600 tracking-wide">
             <a href="#beranda" className="hover:text-amber-600 transition-colors">BERANDA</a>
@@ -86,7 +86,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO / BERANDA SECTION */}
+      {/* HERO / BERANDA SECTION (Tanpa Titik) */}
       <section 
         id="beranda" 
         className="relative pt-44 pb-32 px-6 text-center text-white bg-cover bg-center"
@@ -96,7 +96,7 @@ export default function Home() {
       >
         <div className="max-w-3xl mx-auto relative z-10">
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-6">
-            ETERNAL<span className="text-amber-500">.</span>
+            ETERNAL
           </h1>
           <p className="text-xl md:text-2xl font-light text-stone-200">
             Lebih Dari <span className="text-amber-400 font-semibold">Sekadar Kopi.</span>
@@ -105,7 +105,7 @@ export default function Home() {
             Ruang nyaman untuk setiap inspirasimu. Nikmati perpaduan sempurna antara kopi pilihan dan ruang produktif untuk menemani hari-harimu.
           </p>
 
-          {/* Tombol Google Maps dengan Warna Signature Coklat Kopi */}
+          {/* Tombol Google Maps */}
           <div>
             <a 
               href="https://maps.google.com/?q=Ruko+Maxwell+Gading+Serpong" 
@@ -180,7 +180,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="bg-stone-900 text-stone-400 py-12 text-center">
-        <div className="font-bold text-2xl text-white mb-2 tracking-tighter">ETERNAL<span className="text-amber-500">.</span></div>
+        <div className="font-bold text-2xl text-white mb-2 tracking-tighter">ETERNAL</div>
         <p className="mb-2">Ruko Maxwell, Gading Serpong</p>
         <p className="mb-6">Buka 24 Jam</p>
         
