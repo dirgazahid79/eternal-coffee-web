@@ -91,7 +91,7 @@ export default function Home() {
         id="beranda" 
         className="relative pt-44 pb-32 px-6 text-center text-white bg-cover bg-center"
         style={{ 
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/kafe.jpg')` 
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/beranda.png')` 
         }}
       >
         <div className="max-w-3xl mx-auto relative z-10">
